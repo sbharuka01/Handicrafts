@@ -1,815 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.png"
-      type="image/x-icon"
-    />
-
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!--
-    - #MAIN
-  -->
-
-    <main>
-      <!--
-      - #SIDEBAR
-    -->
-
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Shivam Bharuka</h1>
-
-            <p class="title">Data Analyst</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:richard@example.com" class="contact-link"
-                  >bharuka04@gmail.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+12133522795" class="contact-link">+91 8421441060</a>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">Jan 04, 2000</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Pune, India</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://www.linkedin.com/in/shivam-bharuka/" class="social-link" target=”_blank”>
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="https://github.com/sbharuka01" class="social-link" target=”_blank”>
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-      - #main-content
-    -->
-
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-
-          </ul>
-        </nav>
-
-        <!--
-        - #ABOUT
-      -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              Highly motivated recent graduate with a Bachelor's degree
-              in Master of Computer Application(MCA). I enjoy turning 
-              complex problems into simple, beautiful and
-              intuitive designs.              
-            </p>
-
-            <p>
-              Proficient in SQL, Python, and Excel with
-              hands-on experience in data visualization and statistical
-              analysis. Seeking a data analyst position in a data-driven
-              organization to leverage my skills and contribute to
-              meaningful projects.
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/collection.svg"
-                    width="30"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Collection</h4>
-
-                  <p class="service-item-text">
-                    Gather data from various sources, 
-                    such as databases, spreadsheets, and software applications.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/analytics.png"
-                    width="30"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Analysis</h4>
-
-                  <p class="service-item-text">
-                      Use statistical methods and tools
-                      to analyze the data and identify patterns.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/visualization.svg"
-                    width="30"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Visualization</h4>
-
-                  <p class="service-item-text">
-                    Create visual representations 
-                    of the data, such as charts, graphs, and dashboards.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/report.png"
-                    width="30"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Reporting</h4>
-
-                  <p class="service-item-text">
-                    Communicating organization and provide 
-                    recommendations based on the data.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </section>
-          </div>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <img src="./assets/images/interest.png" width="30"/>
-              </div>
-
-              <h3 class="h3">Interest's</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Music
-                </h4>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Travelling
-                </h4>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Sports
-                </h4>
-              </li>
-            </ol>
-          </section>
-          <br><br>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <img src="./assets/images/language.svg" width="30"/>
-              </div>
-
-              <h3 class="h3">Language's</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  English
-                </h4>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Hindi
-                </h4>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Marathi
-                </h4>
-              </li>
-            </ol>
-          </section>
-
-          <!--
-          - clients
-        -->
-
-          <section class="clients">
-            <h3 class="h3 clients-title"></h3>
-            <ul class="clients-list has-scrollbar">
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume
-              <a href="https://drive.google.com/file/d/1XDruOBk31hTQFWHDxdfr9N_qHU50Mn_e/view?usp=share_link">
-              <img
-              src="./assets/images/download1.png"
-              width="30"/>
-              </a></h2>
-          </header>
-
-        <!--
-          - Education
-        -->
-          
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Master of Computer Application
-                </h4>
-
-                <span>2020 - 2022</span>
-
-                <p class="timeline-text">
-                  P.E.S. Modern College is 
-                  located in Pune, India.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Bachelor of Computer Science
-                </h4>
-
-                <span>2017 - 2020</span>
-
-                <p class="timeline-text">
-                  N.D.M.V.P College is 
-                  located in Nashik, India.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-        <!--
-          - Experience
-        -->
-          
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="bookmark-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Social Media Marketing Internship
-                </h4>
-
-                <span>2023</span>
-
-                <p class="timeline-text">
-                  - Manages the company’s social media accounts and posts content.<br>
-                  - Brainstorms campaign ideas.<br>
-                  - Monitor various social media platforms such as Facebook, Instagram, and Twitter.<br>
-                  - Provide suggestions to management for improving customer experience on social platforms and internal processes.<br>
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Shipping Co-Ordinatior
-                </h4>
-
-                <span>2023 - Present</span>
-
-                <p class="timeline-text">
-                  - Coordinating daily operations with the Shipping Manager.<br>
-                  - Creating and maintaining a report of the daily shipping activities.<br>
-                  - Obtaining shipment invoices and checking the accuracy of the same.<br>
-                  - Communicating and understanding the preferred courier mode.<br>
-                  - Resolving any queries and complaints.<br>
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">SQL</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">SQL Server</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Excel</h5>
-                  <data value="85">85%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Power BI</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-              
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5"> Tableau</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Communication</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        <br><br>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">Certification</h3>
-
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analyst Course</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Data Visualization with Power BI</h5>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Lerning Excel</h5>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Power BI</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Tableau</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Excel</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>SQL</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Power BI</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Tableau</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Excel</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>SQL</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web Development</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="power bi"
-              >
-                <a href="https://github.com/sbharuka01/HR-analytics-PowerBi" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/p1.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">HR Analytics</h3>
-
-                  <p class="project-category">Power BI</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="tableau"
-              >
-                <a href="https://github.com/sbharuka01/Credit-card-tableau" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/t1.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Credit Card Complaints Dashboard</h3>
-
-                  <p class="project-category">Tableau</p>
-                </a>
-              </li>
-
-              <li
-              class="project-item active"
-              data-filter-item
-              data-category="excel"
-            >
-              <a href="https://github.com/sbharuka01/Store-Excel-Work" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img
-                    src="./assets/images/e1.png"
-                    alt="brawlhalla"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title">Store Analysis Dashboard</h3>
-
-                <p class="project-category">Excel</p>
-              </a>
-            </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="tableau"
-              >
-                <a href="https://github.com/sbharuka01/Amazon-sales-tableau" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/t2.png"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Amazon Sales Analysis Dashboard</h3>
-
-                  <p class="project-category">Tableau</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="sql"
-              >
-                <a href="https://github.com/sbharuka01/Sorted-sql" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/s1.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Sorted Data</h3>
-
-                  <p class="project-category">SQL</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://github.com/sbharuka01/Export-Sample-Website" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/w1.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Import - Export Website </h3>
-
-                  <p class="project-category">Web Development</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-      </div>
-    </main>
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Handicraft materials product catalogue with product codes, pack rates, photos and pricing details.">
+<title>Handicraft Materials | Product Catalogue</title>
+<style>
+:root{--ink:#20251f;--muted:#6e756d;--paper:#f7f7f2;--card:#fff;--line:#e5e8df;--green:#314d3d;--sage:#e8eee6;--accent:#c68d54}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--green);color:#fff;padding:34px max(22px,calc((100vw - 1200px)/2)) 28px}
+.topline{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#d5e0d4}
+h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(30px,5vw,48px);line-height:1.08;margin:10px 0}
+header p{color:#e1e8df;margin:0;max-width:680px}
+.wrap{max-width:1200px;margin:auto;padding:25px 22px 55px}
+.toolbar{display:grid;grid-template-columns:minmax(220px,1fr) 190px 180px;gap:10px;margin-bottom:17px}
+input,select{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);font:inherit;outline:none}
+input:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px #314d3d16}
+.summary{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:13px;margin:12px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.photo{height:205px;background:#f0f1ec;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:contain;padding:8px}
+.no-photo{color:#9aa198;font-size:12px}
+.body{padding:14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.code{font-size:11px;letter-spacing:.12em;color:var(--green);font-weight:750}
+.name{font-size:14px;font-weight:650;line-height:1.35;min-height:38px}
+.rate-row{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.rate{font-size:20px;font-weight:750}
+.rate small{font-size:11px;color:var(--muted);font-weight:500}
+.suggest{font-size:12px;color:var(--green);background:var(--sage);padding:5px 8px;border-radius:6px;white-space:nowrap}
+.details{border-top:1px solid var(--line);margin-top:3px;padding-top:8px;color:var(--muted);font-size:12px}
+.details div{margin:3px 0}
+.actions{display:flex;gap:8px;margin-top:auto;padding-top:9px}
+button{border:1px solid var(--line);border-radius:7px;background:#fff;padding:8px 10px;font:inherit;font-size:12px;cursor:pointer;color:var(--green)}
+button:hover{background:var(--sage);border-color:#c9d6c8}
+button.primary{background:var(--green);color:#fff;border-color:var(--green);flex:1}
+button.primary:hover{background:#243c2e}
+.empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:12px}
+footer{max-width:1200px;margin:auto;padding:0 22px 28px;color:var(--muted);font-size:12px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:680px){.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo{height:165px}.wrap{padding:18px 14px 40px}header{padding:28px 18px 24px}}
+@media(max-width:390px){.grid{grid-template-columns:1fr 1fr;gap:9px}.body{padding:10px}.photo{height:135px}.name{font-size:13px}.rate{font-size:17px}.suggest{font-size:10px;padding:4px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="topline">Product collection · Handicraft supplies</div>
+ <h1>Handicraft Materials</h1>
+ <p>Browse products by code, view product photos and check pack pricing and unit details.</p>
+</header>
+<main class="wrap">
+ <div class="toolbar">
+  <input id="search" type="search" placeholder="Search product code or description…" aria-label="Search products">
+  <select id="category" aria-label="Filter by product code group"><option value="">All product groups</option></select>
+  <select id="sort" aria-label="Sort products"><option value="code">Sort: Product code</option><option value="low">Rate: Low to high</option><option value="high">Rate: High to low</option></select>
+ </div>
+ <div class="summary"><span id="count">Loading products…</span><span>Rates in INR (₹)</span></div>
+ <section class="grid" id="products" aria-live="polite"></section>
+</main>
+<footer>Catalogue data is based on the supplied rate sheet. “Suggested rate” reflects the sheet’s +45% column. Confirm current rates and colour/packing availability before ordering.</footer>
+<script>
+const products = [{"code": "RDI-1", "description": "RDI-01 Pack of 12 Pcs (7 Inches)", "packRate": 300, "unitRate": 25, "unit": "PER PCS", "suggestedRate": 435, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-2.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-1", "description": "RDI-01 Pack of 12 Pcs (9 Inches)", "packRate": 360, "unitRate": 30, "unit": "PER PCS", "suggestedRate": 522, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-3.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-1", "description": "RDI-01 Pack of 12 Pcs (12 Inches)", "packRate": 420, "unitRate": 35, "unit": "PER PCS", "suggestedRate": 609, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-4.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-1", "description": "RDI-01 Pack of 12 Pcs (15 Inches)", "packRate": 540, "unitRate": 45, "unit": "PER PCS", "suggestedRate": 783, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-5.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-1", "description": "RDI-01 Pack of 12 Pcs (18 Inches)", "packRate": 660, "unitRate": 55, "unit": "PER PCS", "suggestedRate": 957, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-6.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-2", "description": "RDI-02 RingHanging(Packof12Pcs)", "packRate": 276, "unitRate": 23, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 400.2, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-7.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-4", "description": "RDI-04 WallHanging(Packof12lines)", "packRate": 304, "unitRate": 25.5, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 440.8, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-8.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "RDI-5", "description": "RDI-05(Packof10line)", "packRate": 74, "unitRate": 7.4, "unit": "ALL COLOUR PACK", "suggestedRate": 107.30000000000001, "remarks": "ALL COLOUR PACK", "notes": "ALL COLOUR PACK", "image": "assets/product-9.jpeg", "unitLabel": "ALL COLOUR PACK"}, {"code": "RDI-6", "description": "RDI-06 MehendiNameNonBreakable", "packRate": 105, "unitRate": 105, "unit": "PER PCS", "suggestedRate": 152.25, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-10.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-7", "description": "RDI-07", "packRate": 249, "unitRate": 249, "unit": "PER PCS", "suggestedRate": 361.05, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-11.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-8", "description": "RDI-08 (Packof12Pcs)", "packRate": 120, "unitRate": 10, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 174, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-12.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-9", "description": "RDI-09 Haldi Name NonBreakable", "packRate": 95, "unitRate": 95, "unit": "6 COLOUR KE ALAG ALAG PACK", "suggestedRate": 137.75, "remarks": "6 COLOUR KE ALAG ALAG PACK", "notes": "6 COLOUR KE ALAG ALAG PACK", "image": "assets/product-13.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PACK"}, {"code": "RDI-12", "description": "RDI-12 Rajasthani Kathputli Puppets pair", "packRate": 127, "unitRate": 127, "unit": "PER PAIR", "suggestedRate": 184.15, "remarks": "PER PAIR", "notes": "PER PAIR", "image": "assets/product-14.jpeg", "unitLabel": "PER PAIR"}, {"code": "RDI-14", "description": "RDI-14 NetChakre(packof12pcs)", "packRate": 564, "unitRate": 47, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 817.8, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-15.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-15", "description": "RDI-15 lines (packof12lines)", "packRate": 312, "unitRate": 26, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 452.4, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-16.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-18", "description": "RDI-18 (Packof12lines)", "packRate": 504, "unitRate": 42, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 730.8, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-17.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-19", "description": "RDI-19 (Packof12lines)", "packRate": 304, "unitRate": 25.333333333333332, "unit": "2 COLOUR KE 2 PKT", "suggestedRate": 440.8, "remarks": "2 COLOUR KE 2 PKT", "notes": "2 COLOUR KE 2 PKT", "image": "assets/product-18.jpeg", "unitLabel": "2 COLOUR KE 2 PKT"}, {"code": "RDI-23", "description": "RDI-23 Kite Hanging (Packof12Pcs)", "packRate": 360, "unitRate": 30, "unit": "ALL COLOUR PACK", "suggestedRate": 522, "remarks": "ALL COLOUR PACK", "notes": "ALL COLOUR PACK", "image": "assets/product-19.jpeg", "unitLabel": "ALL COLOUR PACK"}, {"code": "RDI-30", "description": "RDI-30 MAPLE Flower (Packof12Pcs)", "packRate": 223, "unitRate": 18.583333333333332, "unit": "5 COLOUR KE PKT", "suggestedRate": 323.35, "remarks": "5 COLOUR KE PKT", "notes": "5 COLOUR KE PKT", "image": "assets/product-20.jpeg", "unitLabel": "5 COLOUR KE PKT"}, {"code": "RDI-31", "description": "RDI-31-FC-1026-19F Ficus (Pack of 12 Pcs)", "packRate": 75, "unitRate": 6.25, "unit": "GREEN+LIGHT+GREEN \nBABY PINK \nBLUE \nLIGHT GREEN \nPACK", "suggestedRate": 108.75, "remarks": "GREEN+LIGHT+GREEN \nBABY PINK \nBLUE \nLIGHT GREEN \nPACK", "notes": "GREEN+LIGHT+GREEN \nBABY PINK \nBLUE \nLIGHT GREEN \nPACK", "image": "assets/product-21.jpeg", "unitLabel": "GREEN+LIGHT+GREEN \nBABY PINK \nBLUE \nLIGHT GREEN \nPACK"}, {"code": "RDI-31", "description": "RDI-31-FC-1026-19F Ficus (Pack of 12 Pcs)", "packRate": 90, "unitRate": 7.5, "unit": "DARK GREEN PACK", "suggestedRate": 130.5, "remarks": "DARK GREEN PACK", "notes": "DARK GREEN PACK", "image": "assets/product-22.jpeg", "unitLabel": "DARK GREEN PACK"}, {"code": "RDI-31", "description": "RDI-31-FC-1026-19F Ficus (Pack of 12 Pcs)", "packRate": 75, "unitRate": 6.25, "unit": "LIGHT PURPLE \nOFF WHITE \nWHITE\nYELLOW \nPACK", "suggestedRate": 108.75, "remarks": "LIGHT PURPLE \nOFF WHITE \nWHITE\nYELLOW \nPACK", "notes": "LIGHT PURPLE \nOFF WHITE \nWHITE\nYELLOW \nPACK", "image": "assets/product-23.jpeg", "unitLabel": "LIGHT PURPLE \nOFF WHITE \nWHITE\nYELLOW \nPACK"}, {"code": "RDI-32", "description": "RDI-32 glidus", "packRate": 95, "unitRate": 95, "unit": "ALL COLOUR PCS", "suggestedRate": 137.75, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-24.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-33", "description": "RDI-33-FC-1026-19F blossum flower (7 STICK)", "packRate": 50, "unitRate": 50, "unit": "ALL COLOUR PCS", "suggestedRate": 72.5, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-25.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-34", "description": "RDI-34GendaLines(Packof5Lines)", "packRate": 70, "unitRate": 14, "unit": "ALL COLOUR PACK", "suggestedRate": 101.5, "remarks": "ALL COLOUR PACK", "notes": "ALL COLOUR PACK", "image": "assets/product-26.jpeg", "unitLabel": "ALL COLOUR PACK"}, {"code": "RDI-37", "description": "RDI-37 (Packof12lines)", "packRate": 160, "unitRate": 13.333333333333334, "unit": "PER PCS", "suggestedRate": 232, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-27.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-39", "description": "RDI-39(Packof5Lines)", "packRate": 90, "unitRate": 18, "unit": "PER PCS", "suggestedRate": 130.5, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-28.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-40", "description": "RDI-40 (Packof12Pcs)", "packRate": 228, "unitRate": 19, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 330.6, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-29.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-42", "description": "RDI-42(Packof12Line)", "packRate": 336, "unitRate": 28, "unit": "PER PCS", "suggestedRate": 487.20000000000005, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-30.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-43", "description": "RDI-43(Packof12)", "packRate": 420, "unitRate": 35, "unit": "PER PCS", "suggestedRate": 609, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-31.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-44", "description": "RDI-44 Rajniline(Packof12line)", "packRate": 192, "unitRate": 16, "unit": "PER PCS", "suggestedRate": 278.4, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-32.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-45", "description": "RDI-45 (Packof12Pcs)", "packRate": 156, "unitRate": 13, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 226.2, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-33.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-46", "description": "RDI-46(Packof12Pcs)", "packRate": 120, "unitRate": 10, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 174, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-34.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-50", "description": "RDI-50 PER PCS", "packRate": 66, "unitRate": 66, "unit": "PER PCS", "suggestedRate": 95.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-35.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-52", "description": "RDI-52 Per Pcs", "packRate": 66, "unitRate": 66, "unit": "PER PCS", "suggestedRate": 95.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-36.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-53", "description": "RDI-53(Per Pcs)", "packRate": 66, "unitRate": 66, "unit": "PER PCS", "suggestedRate": 95.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-37.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-55", "description": "RDI-55 (Packof12Line)", "packRate": 276, "unitRate": 23, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 400.2, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-38.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-56", "description": "RDI-56 (Packof10Line)", "packRate": 95, "unitRate": 9.5, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 137.75, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-39.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-59", "description": "RDI-59 PER PCS", "packRate": 93, "unitRate": 93, "unit": "PER PCS", "suggestedRate": 134.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-40.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-60", "description": "RDI-60 PER PCS", "packRate": 93, "unitRate": 93, "unit": "PER PCS", "suggestedRate": 134.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-41.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-61", "description": "RDI-61 PER PCS", "packRate": 93, "unitRate": 93, "unit": "PER PCS", "suggestedRate": 134.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-42.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-67", "description": "RDI-67 packof10Pcs", "packRate": 106, "unitRate": 10.6, "unit": "PER PCS", "suggestedRate": 153.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-43.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-68", "description": "RDI-68 (PackOf25Pcs)", "packRate": 318, "unitRate": 12.72, "unit": "10 COLOUR KE ALAG ALAG PKT", "suggestedRate": 461.1, "remarks": "10 COLOUR KE ALAG ALAG PKT", "notes": "10 COLOUR KE ALAG ALAG PKT", "image": "assets/product-44.jpeg", "unitLabel": "10 COLOUR KE ALAG ALAG PKT"}, {"code": "RDI-70", "description": "RDI-70(Pack Of 12Pcs)", "packRate": 330, "unitRate": 27.5, "unit": "PER PCS", "suggestedRate": 478.5, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-45.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-72", "description": "RDI-72(Pack Of 12 Pcs)", "packRate": 436, "unitRate": 36.333333333333336, "unit": "PER PCS", "suggestedRate": 632.2, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-46.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-74", "description": "RDI-74 PackOf12Pcs", "packRate": 832, "unitRate": 69.33333333333333, "unit": "MIX COLOUR PACK", "suggestedRate": 1206.4, "remarks": "MIX COLOUR PACK", "notes": "MIX COLOUR PACK", "image": "assets/product-47.jpeg", "unitLabel": "MIX COLOUR PACK"}, {"code": "RDI-75", "description": "RDI-75(pack Of 12 Pcs)", "packRate": 264, "unitRate": 22, "unit": "PER PCS", "suggestedRate": 382.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-48.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-79", "description": "RDI-79 HALDI PER PCS", "packRate": 71, "unitRate": 71, "unit": "PER PCS", "suggestedRate": 102.95, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-49.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-80", "description": "RDI-80 (Per Pcs)", "packRate": 71, "unitRate": 71, "unit": "PER PCS", "suggestedRate": 102.95, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-50.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-81", "description": "RDI-81 Per Pcs", "packRate": 71, "unitRate": 81, "unit": "PER PCS", "suggestedRate": 102.95, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-51.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-83", "description": "RDI-83 (Pack Of 12Pcs )", "packRate": 210, "unitRate": 17.5, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 304.5, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-52.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-92", "description": "RDI-92", "packRate": 80, "unitRate": 80, "unit": "PER PCS", "suggestedRate": 116, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-53.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-93", "description": "RDI-93", "packRate": 55, "unitRate": 55, "unit": "MIX COLOUR PCS", "suggestedRate": 79.75, "remarks": "MIX COLOUR PCS", "notes": "MIX COLOUR PCS", "image": "assets/product-54.jpeg", "unitLabel": "MIX COLOUR PCS"}, {"code": "RDI-94", "description": "RDI-94", "packRate": 108, "unitRate": 108, "unit": "MIX COLOUR PCS", "suggestedRate": 156.6, "remarks": "MIX COLOUR PCS", "notes": "MIX COLOUR PCS", "image": "assets/product-55.jpeg", "unitLabel": "MIX COLOUR PCS"}, {"code": "RDI-101", "description": "RDI-101(packof10line)Originalcrystal", "packRate": 704, "unitRate": 70.4, "unit": "PER PCS", "suggestedRate": 1020.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-56.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-99", "description": "RDI-99(Packof10Line)fibercrystal", "packRate": 528, "unitRate": 52.8, "unit": "PER PCS", "suggestedRate": 765.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-57.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-100", "description": "RDI-100 (Per Pcs)", "packRate": 71, "unitRate": 71, "unit": "PER PCS", "suggestedRate": 102.95, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-58.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-114", "description": "RDI-114Pcs", "packRate": 127, "unitRate": 127, "unit": "PER PCS", "suggestedRate": 184.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-59.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-118", "description": "RDI-118(Per Pcs)", "packRate": 95, "unitRate": 95, "unit": "PER PCS", "suggestedRate": 137.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-60.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-119", "description": "RDI-119(Per Pcs)POP", "packRate": 95, "unitRate": 95, "unit": "PER PCS", "suggestedRate": 137.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-61.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-121", "description": "RDI-121SilverGoldBothSideBestquality", "packRate": 3820, "unitRate": 3820, "unit": "PER PCS", "suggestedRate": 5539, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-62.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-127", "description": "RDI-127 (Pack of 12)", "packRate": 531, "unitRate": 44.25, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 769.95, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-63.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-129", "description": "RDI-129(Packof12Pcs)", "packRate": 420, "unitRate": 35, "unit": "PER PCS", "suggestedRate": 609, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-64.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-143", "description": "RDI-143(Packof12)", "packRate": 1266, "unitRate": 105.5, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1835.7, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-65.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-144", "description": "RDI-144(Packof12)", "packRate": 1277, "unitRate": 106.41666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1851.65, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-66.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-150", "description": "RDI-150 pack of 5 Line", "packRate": 120, "unitRate": 24, "unit": "ALL COLOUR PACK", "suggestedRate": 174, "remarks": "ALL COLOUR PACK", "notes": "ALL COLOUR PACK", "image": "assets/product-67.jpeg", "unitLabel": "ALL COLOUR PACK"}, {"code": "RDI-158", "description": "RDI-158(Packof12Pcs)", "packRate": 207, "unitRate": 17.25, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 300.15, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-68.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-160", "description": "RDI-160(Packof12)", "packRate": 528, "unitRate": 44, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 765.6, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-69.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-171", "description": "RDI-171 (SinglePcs)", "packRate": 160, "unitRate": 160, "unit": "ALL COLOUR PCS", "suggestedRate": 232, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-70.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-173", "description": "RDI-173 Dryleaves(SinglePcs)", "packRate": 33, "unitRate": 33, "unit": "PER PCS", "suggestedRate": 47.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-71.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-174", "description": "RDI-174(Packof10line)", "packRate": 630, "unitRate": 63, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 913.5, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-72.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-175", "description": "RDI-175 (Packof12)", "packRate": 288, "unitRate": 24, "unit": "PER PCS", "suggestedRate": 417.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-73.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-178", "description": "RDI-178-FC-1026-25F (Pack of 10 LINE)", "packRate": 430, "unitRate": 43, "unit": "12 COLOUR KE ALAG ALAG PKT", "suggestedRate": 623.5, "remarks": "12 COLOUR KE ALAG ALAG PKT", "notes": "12 COLOUR KE ALAG ALAG PKT", "image": "assets/product-74.jpeg", "unitLabel": "12 COLOUR KE ALAG ALAG PKT"}, {"code": "RDI-179", "description": "RDI-179 (Packof10)", "packRate": 890, "unitRate": 89, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1290.5, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-75.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-180", "description": "RDI-180(Packof10line)", "packRate": 480, "unitRate": 48, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 696, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-76.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "RDI-191", "description": "RDI-191 (SMALL SIZE)", "packRate": 195, "unitRate": 195, "unit": "ALL COLOUR PCS", "suggestedRate": 282.75, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-77.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-194", "description": "RDI-194", "packRate": 250, "unitRate": 250, "unit": "ALL COLOUR PCS", "suggestedRate": 362.5, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-78.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-195", "description": "RDI-195", "packRate": 193, "unitRate": 193, "unit": "PHOTO ME JO HAI SABHI COLOUR 3-3         PACK", "suggestedRate": 279.85, "remarks": "PHOTO ME JO HAI SABHI COLOUR 3-3         PACK", "notes": "PHOTO ME JO HAI SABHI COLOUR 3-3         PACK", "image": "assets/product-79.jpeg", "unitLabel": "PHOTO ME JO HAI SABHI COLOUR 3-3         PACK"}, {"code": "RDI-204", "description": "RDI-204PerPcs", "packRate": 438, "unitRate": 438, "unit": "PER PCS", "suggestedRate": 635.1, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-80.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-208", "description": "RDI-208 (Pack of 12)", "packRate": 1294, "unitRate": 107.83333333333333, "unit": "2 COLOUR KE 2 PKT", "suggestedRate": 1876.3000000000002, "remarks": "2 COLOUR KE 2 PKT", "notes": "2 COLOUR KE 2 PKT", "image": "assets/product-81.jpeg", "unitLabel": "2 COLOUR KE 2 PKT"}, {"code": "RDI-214", "description": "RDI-214 NEW BLOSSUM FLOWER", "packRate": 176, "unitRate": 176, "unit": "ALL COLOUR PCS", "suggestedRate": 255.2, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-82.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-220", "description": "RDI-220 (Pack of 5)", "packRate": 220, "unitRate": 44, "unit": "2 - PINK \n2 - WHITE \n2 - BABY PINK \nPACK", "suggestedRate": 319, "remarks": "2 - PINK \n2 - WHITE \n2 - BABY PINK \nPACK", "notes": "2 - PINK \n2 - WHITE \n2 - BABY PINK \nPACK", "image": "assets/product-83.jpeg", "unitLabel": "2 - PINK \n2 - WHITE \n2 - BABY PINK \nPACK"}, {"code": "RDI-222", "description": "RDI-222 (Pack of 10)", "packRate": 699, "unitRate": 69.9, "unit": "PER PCS", "suggestedRate": 1013.55, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-84.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-224", "description": "RDI-224 Per Pcs", "packRate": 50, "unitRate": 50, "unit": "ALL COLOUR PCS", "suggestedRate": 72.5, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-85.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "RDI-230", "description": "RDI-230 (PACK OF 10 LINE)", "packRate": 308, "unitRate": 30.8, "unit": "PER PCS", "suggestedRate": 446.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-86.jpeg", "unitLabel": "PER PCS"}, {"code": "RDI-231", "description": "RDI-231 PER PCS", "packRate": 30, "unitRate": 30, "unit": "5 COLOUR KE 2-2 PCS", "suggestedRate": 43.5, "remarks": "5 COLOUR KE 2-2 PCS", "notes": "5 COLOUR KE 2-2 PCS", "image": "assets/product-87.jpeg", "unitLabel": "5 COLOUR KE 2-2 PCS"}, {"code": "RDI-236", "description": "RDI-236 PER PCS", "packRate": 400, "unitRate": 400, "unit": "6 PCS ALAG ALAG COLOUR PCS", "suggestedRate": 580, "remarks": "6 PCS ALAG ALAG COLOUR PCS", "notes": "6 PCS ALAG ALAG COLOUR PCS", "image": "assets/product-88.jpeg", "unitLabel": "6 PCS ALAG ALAG COLOUR PCS"}, {"code": "RDI-237", "description": "RDI-237 PER PCS", "packRate": 800, "unitRate": 800, "unit": "6 PCS ALAG ALAG COLOUR PCS", "suggestedRate": 1160, "remarks": "6 PCS ALAG ALAG COLOUR PCS", "notes": "6 PCS ALAG ALAG COLOUR PCS", "image": "assets/product-89.jpeg", "unitLabel": "6 PCS ALAG ALAG COLOUR PCS"}, {"code": "RDI-242", "description": "RDI-242 (4) Inch Velevet Ball Line", "packRate": 750, "unitRate": 750, "unit": "6 PCS ALAG ALAG COLOUR LINE", "suggestedRate": 1087.5, "remarks": "6 PCS ALAG ALAG COLOUR LINE", "notes": "6 PCS ALAG ALAG COLOUR LINE", "image": "assets/product-90.jpeg", "unitLabel": "6 PCS ALAG ALAG COLOUR LINE"}, {"code": "RDI-243", "description": "RDI-243-FC-1026-17F (PER PCS)", "packRate": 180, "unitRate": 180, "unit": "PER PCS", "suggestedRate": 261, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-91.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-1", "description": "WGH-01 (Pack of 12 Line)", "packRate": 907, "unitRate": 75.58333333333333, "unit": "PER PCS", "suggestedRate": 1315.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-92.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-2", "description": "WGH-02 (Pack of 12 Line)", "packRate": 1409, "unitRate": 117.41666666666667, "unit": "PER PCS", "suggestedRate": 2043.0500000000002, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-93.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-4", "description": "WGH-04 (Pack of 12 line)", "packRate": 544, "unitRate": 45.333333333333336, "unit": "PER PCS", "suggestedRate": 788.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-94.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-8", "description": "WGH-08 (Pack of 12 )", "packRate": 307, "unitRate": 25.583333333333332, "unit": "PER PCS", "suggestedRate": 445.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-95.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-12", "description": "WGH-12 (Pack of 12 line)", "packRate": 1007, "unitRate": 83.91666666666667, "unit": "PER PCS", "suggestedRate": 1460.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-96.jpeg", "unitLabel": "PER PCS"}, {"code": "WGH-13", "description": "WGH-13 pack of 12 line", "packRate": 364, "unitRate": 30.333333333333332, "unit": "PER PCS", "suggestedRate": 527.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-97.jpeg", "unitLabel": "PER PCS"}, {"code": "AF-233", "description": "AF-233 PER PCS", "packRate": 77, "unitRate": 77, "unit": "ALL COLOUR PCS", "suggestedRate": 111.65, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-98.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-232", "description": "AF-232 PER PCS", "packRate": 77, "unitRate": 77, "unit": "ALL COLOUR PCS", "suggestedRate": 111.65, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-99.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-231", "description": "AF-231 PER PCS", "packRate": 78, "unitRate": 78, "unit": "ALL COLOUR PCS", "suggestedRate": 113.1, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-100.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-230", "description": "AF-230 PER PCS", "packRate": 77, "unitRate": 77, "unit": "ALL COLOUR PCS", "suggestedRate": 111.65, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-101.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-229", "description": "AF-229 PER PCS", "packRate": 75, "unitRate": 75, "unit": "ALL COLOUR PCS", "suggestedRate": 108.75, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-102.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-228", "description": "AF-228 PER PCS", "packRate": 108, "unitRate": 108, "unit": "ALL COLOUR PCS", "suggestedRate": 156.6, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-103.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-227", "description": "AF-227 PER PCS", "packRate": 77, "unitRate": 77, "unit": "ALL COLOUR PCS", "suggestedRate": 111.65, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-104.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-225", "description": "AF-225 PER PCS", "packRate": 78, "unitRate": 78, "unit": "ALL COLOUR PCS", "suggestedRate": 113.1, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-105.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-224", "description": "AF-224 PER PCS", "packRate": 75, "unitRate": 75, "unit": "ALL COLOUR PCS", "suggestedRate": 108.75, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-106.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-223", "description": "AF-223 PER PCS", "packRate": 78, "unitRate": 78, "unit": "ALL COLOUR PCS", "suggestedRate": 113.1, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-107.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-222", "description": "AF-222 PER PCS", "packRate": 84, "unitRate": 84, "unit": "ALL COLOUR PCS", "suggestedRate": 121.80000000000001, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-108.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-221", "description": "AF-221 PER PCS", "packRate": 111, "unitRate": 111, "unit": "ALL COLOUR PCS", "suggestedRate": 160.95, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-109.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-220", "description": "AF-220 PER PCS", "packRate": 77, "unitRate": 77, "unit": "ALL COLOUR PCS", "suggestedRate": 111.65, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-110.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-218", "description": "AF-218-FC-1026-19F", "packRate": 75, "unitRate": 75, "unit": "ALL COLOUR PCS", "suggestedRate": 108.75, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-111.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-217", "description": "AF-217-FC-1026-19F", "packRate": 65, "unitRate": 65, "unit": "ALL COLOUR PCS", "suggestedRate": 94.25, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-112.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-216", "description": "AF-216-FC-1026-19F", "packRate": 65, "unitRate": 65, "unit": "ALL COLOUR PCS", "suggestedRate": 94.25, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-113.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-215", "description": "AF-215-FC-1026-19F", "packRate": 65, "unitRate": 65, "unit": "ALL COLOUR PCS", "suggestedRate": 94.25, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-114.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-18", "description": "AF-18 PER PCS", "packRate": 62, "unitRate": 62, "unit": "ALL COLOUR PCS", "suggestedRate": 89.9, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-115.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-22", "description": "AF-22 PER PCS", "packRate": 29, "unitRate": 29, "unit": "ALL COLOUR PCS", "suggestedRate": 42.05, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-116.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-68", "description": "AF-68 PER PCS", "packRate": 23, "unitRate": 23, "unit": "ALL COLOUR PCS", "suggestedRate": 33.35, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-117.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-192", "description": "AF-192 PER PCS", "packRate": 66, "unitRate": 66, "unit": "ALL COLOUR PCS", "suggestedRate": 95.7, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-118.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-155", "description": "AF-155 PER PCS", "packRate": 44, "unitRate": 44, "unit": "ALL COLOUR PCS", "suggestedRate": 63.8, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-119.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-169", "description": "AF-169 PER PCS", "packRate": 68, "unitRate": 68, "unit": "ALL COLOUR PCS", "suggestedRate": 98.6, "remarks": "ALL COLOUR PCS", "notes": "ALL COLOUR PCS", "image": "assets/product-120.jpeg", "unitLabel": "ALL COLOUR PCS"}, {"code": "AF-190", "description": "AF-190-FC-1026-19F PER PCS", "packRate": 84, "unitRate": 84, "unit": "PER PCS", "suggestedRate": 121.80000000000001, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-121.png", "unitLabel": "PER PCS"}, {"code": "ED-36", "description": "ED-36-FC-1026-21F Regular umbrella", "packRate": 90, "unitRate": 90, "unit": "PER PCS", "suggestedRate": 130.5, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-122.jpeg", "unitLabel": "PER PCS"}, {"code": "U-52", "description": "U-52-FC-1026-21F Per Pcs BLUE", "packRate": 3135, "unitRate": 3135, "unit": "PER PCS", "suggestedRate": 4545.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-123.jpeg", "unitLabel": "PER PCS"}, {"code": "U-22", "description": "U-22", "packRate": 102, "unitRate": 102, "unit": "PER PCS", "suggestedRate": 147.9, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-124.jpeg", "unitLabel": "PER PCS"}, {"code": "U-03", "description": "U-03 DecorativeUmbrella", "packRate": 239, "unitRate": 239, "unit": "PER PCS", "suggestedRate": 346.55, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-125.jpeg", "unitLabel": "PER PCS"}, {"code": "U-02", "description": "U-02 ChainesebambooUmbrella", "packRate": 264, "unitRate": 264, "unit": "PER PCS", "suggestedRate": 382.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-126.jpeg", "unitLabel": "PER PCS"}, {"code": "APGN-2", "description": "APGN-02 (Victorypot)", "packRate": 210, "unitRate": 210, "unit": "PER PCS", "suggestedRate": 304.5, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-127.jpeg", "unitLabel": "PER PCS"}, {"code": "APGN-75", "description": "APGN-75 Pisa Pot (19 Inch)", "packRate": 280, "unitRate": 280, "unit": "PER PCS", "suggestedRate": 406, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-128.jpeg", "unitLabel": "PER PCS"}, {"code": "APGN-76", "description": "APGN-76", "packRate": 204, "unitRate": 204, "unit": "PER PCS", "suggestedRate": 295.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-129.jpeg", "unitLabel": "PER PCS"}, {"code": "APGN-77", "description": "APGN-77", "packRate": 204, "unitRate": 204, "unit": "PER PCS", "suggestedRate": 295.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-130.jpeg", "unitLabel": "PER PCS"}, {"code": "APGN-79", "description": "APGN-79", "packRate": 203, "unitRate": 203, "unit": "PER PCS", "suggestedRate": 294.35, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-131.jpeg", "unitLabel": "PER PCS"}, {"code": "RH-3", "description": "RH-3(Packof12pcs)", "packRate": 1648, "unitRate": 137.33333333333334, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2389.6, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-132.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "RH-10", "description": "RH-10(Packof12Pcs)", "packRate": 649, "unitRate": 54.083333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 941.05, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-133.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-2", "description": "NC-02 (Pack of 12 Pcs)", "packRate": 1090, "unitRate": 90.83333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1580.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-134.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-3", "description": "NC-03 (Pack of 12 Pcs)", "packRate": 1210, "unitRate": 100.83333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1754.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-135.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-5", "description": "NC-05 (Pack of 12 Pcs) 8 Inch", "packRate": 826, "unitRate": 68.83333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1197.7, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-136.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-5", "description": "NC-05 (Pack of 12 Pcs) 12 Inch", "packRate": 1011, "unitRate": 84.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1465.95, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-137.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-5", "description": "NC-05 (Pack of 12 Pcs) 15 Inch", "packRate": 1282, "unitRate": 106.83333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1858.9, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-138.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-5", "description": "NC-05 (Pack of 12 Pcs) 18 Inch", "packRate": 1654, "unitRate": 137.83333333333334, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2398.3, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-139.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-5", "description": "NC-05 (Pack of 12 Pcs) 22 Inch", "packRate": 2016, "unitRate": 168, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2923.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-140.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-6", "description": "NC-06 (Pack of 12 Pcs)", "packRate": 1007, "unitRate": 83.91666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1460.15, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-141.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-12", "description": "NC-12 (Pack of 12 Pcs)", "packRate": 1135, "unitRate": 94.58333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1645.75, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-142.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-14", "description": "NC-14 (Pack of 12 Pcs)", "packRate": 991, "unitRate": 82.58333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1436.95, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-143.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-15", "description": "NC-15 ( Pack of 12 Pcs)", "packRate": 917, "unitRate": 76.41666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1329.65, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-144.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-16", "description": "NC-16 (Pack of 12 Pcs)", "packRate": 879, "unitRate": 73.25, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1274.55, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-145.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-27", "description": "NC-27 (Pack of 12 Pcs) 8 Inch", "packRate": 788, "unitRate": 65.66666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1142.6, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-146.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-27", "description": "NC-27 (Pack of 12 Pcs) 10 Inches", "packRate": 916, "unitRate": 76.33333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1328.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-147.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-27", "description": "NC-27 (Pack of 12 Pcs) 15 Inch", "packRate": 1310, "unitRate": 109.16666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1899.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-148.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-27", "description": "NC-27 (Pack of 12 Pcs) 18 Inch", "packRate": 1568, "unitRate": 130.66666666666666, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2273.6, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-149.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-28", "description": "NC-28 (Pack of 12 Pcs)", "packRate": 1106, "unitRate": 92.16666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1603.7, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-150.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-34", "description": "NC-34 (Pack of 12 Pcs)", "packRate": 1611, "unitRate": 134.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2335.95, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-151.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "NC-36", "description": "NC-36 Pack of 12 pcs", "packRate": 1101, "unitRate": 91.75, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1596.45, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-152.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-39", "description": "NC-39 (Pack of 12 Pcs)", "packRate": 683, "unitRate": 56.916666666666664, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 990.35, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-153.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-49", "description": "NC-49 Pack of 12 Pcs", "packRate": 2485, "unitRate": 207.08333333333334, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 3603.25, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-154.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-61", "description": "NC-61 pack of 12", "packRate": 2620, "unitRate": 218.33333333333334, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 3799, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-155.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-64", "description": "NC-64 (Pack of 12)", "packRate": 1089, "unitRate": 90.75, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1579.05, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-156.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-65", "description": "NC-65 (Pack of 12 Pcs)", "packRate": 2205, "unitRate": 183.75, "unit": "6 PCS ALAG ALAG COLOUR PCS", "suggestedRate": 3197.25, "remarks": "6 PCS ALAG ALAG COLOUR PCS", "notes": "6 PCS ALAG ALAG COLOUR PCS", "image": "assets/product-157.jpeg", "unitLabel": "6 PCS ALAG ALAG COLOUR PCS"}, {"code": "NC-71", "description": "NC-71 (Pack of 12 Pcs)", "packRate": 1824, "unitRate": 152, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 2644.8, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-158.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-74", "description": "NC-74 (Pack of 12 Pcs)", "packRate": 1560, "unitRate": 130, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 2262, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-159.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-76", "description": "NC-76 (Pack of 12 Pcs)", "packRate": 1644, "unitRate": 137, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 2383.8, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-160.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-82", "description": "NC-82 ( Pack of 12 Pcs )", "packRate": 1980, "unitRate": 165, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 2871, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-161.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "NC-84", "description": "NC-84 ( Pack of 12 Pcs )", "packRate": 552, "unitRate": 46, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 800.4, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-162.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "ARH-8", "description": "ARH-8 (Pack of 12 Pcs)", "packRate": 1582, "unitRate": 131.83333333333334, "unit": "PER PCS", "suggestedRate": 2293.9, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-163.jpeg", "unitLabel": "PER PCS"}, {"code": "ARH-9", "description": "ARH-9 (Pack of 12 Pcs)", "packRate": 846, "unitRate": 70.5, "unit": "PER PCS", "suggestedRate": 1226.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-164.jpeg", "unitLabel": "PER PCS"}, {"code": "ARH-10", "description": "ARH-10 (Pack of 12 Pcs)", "packRate": 1967, "unitRate": 163.91666666666666, "unit": "PER PCS", "suggestedRate": 2852.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-165.jpeg", "unitLabel": "PER PCS"}, {"code": "ARH-15", "description": "ARH-15 (Pack of 12 Pcs)", "packRate": 528, "unitRate": 44, "unit": "PER PCS", "suggestedRate": 765.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-166.jpeg", "unitLabel": "PER PCS"}, {"code": "FT-3", "description": "FT-3 Fancy Toran", "packRate": 127, "unitRate": 127, "unit": "PER PCS", "suggestedRate": 184.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-167.png", "unitLabel": "PER PCS"}, {"code": "FT-5", "description": "FT-5 Fancy Toran", "packRate": 169, "unitRate": 169, "unit": "PER PCS", "suggestedRate": 245.05, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-168.png", "unitLabel": "PER PCS"}, {"code": "FT-16", "description": "FT-16 Fancy Toran", "packRate": 291, "unitRate": 291, "unit": "PER PCS", "suggestedRate": 421.95000000000005, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-169.jpeg", "unitLabel": "PER PCS"}, {"code": "FT-30", "description": "FT-30 Elephant Fancy Toran", "packRate": 110, "unitRate": 110, "unit": "PER PCS", "suggestedRate": 159.5, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-170.jpeg", "unitLabel": "PER PCS"}, {"code": "FT-32", "description": "FT-32 Pom Pom Fancy Toran", "packRate": 127, "unitRate": 127, "unit": "PER PCS", "suggestedRate": 184.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-171.jpeg", "unitLabel": "PER PCS"}, {"code": "MNH-1", "description": "MNH-1 (FANCY TORAN)", "packRate": 326, "unitRate": 326, "unit": "PER PCS", "suggestedRate": 472.70000000000005, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-172.jpeg", "unitLabel": "PER PCS"}, {"code": "MSL-3", "description": "MSL-3 (Pack of 10 Set)", "packRate": 795, "unitRate": 79.5, "unit": "SET", "suggestedRate": 1152.75, "remarks": "SET", "notes": "SET", "image": "assets/product-173.jpeg", "unitLabel": "SET"}, {"code": "MSL-1", "description": "MSL-1 per pcs", "packRate": 51, "unitRate": 51, "unit": "SET", "suggestedRate": 73.95, "remarks": "SET", "notes": "SET", "image": "assets/product-174.jpeg", "unitLabel": "SET"}, {"code": "MSL-5", "description": "MSL-5 (Pack of 10 Pair)", "packRate": 201, "unitRate": 20.1, "unit": "PER PAIR", "suggestedRate": 291.45, "remarks": "PER PAIR", "notes": "PER PAIR", "image": "assets/product-175.jpeg", "unitLabel": "PER PAIR"}, {"code": "MSL-4", "description": "MSL-4 ( Pack of 10 Pair)", "packRate": 244, "unitRate": 24.4, "unit": "PER PAIR", "suggestedRate": 353.8, "remarks": "PER PAIR", "notes": "PER PAIR", "image": "assets/product-176.jpeg", "unitLabel": "PER PAIR"}, {"code": "MSL-7", "description": "MSL-7 Shubh-labh Hanging pair", "packRate": 42, "unitRate": 42, "unit": "PER PAIR", "suggestedRate": 60.900000000000006, "remarks": "PER PAIR", "notes": "PER PAIR", "image": "assets/product-177.jpeg", "unitLabel": "PER PAIR"}, {"code": "MSL-8", "description": "MSL-8 SL doll Hanging pair", "packRate": 62, "unitRate": 62, "unit": "PER PAIR", "suggestedRate": 89.9, "remarks": "PER PAIR", "notes": "PER PAIR", "image": "assets/product-178.jpeg", "unitLabel": "PER PAIR"}, {"code": "GT-58", "description": "GT-58", "packRate": 215, "unitRate": 215, "unit": "PER PCS", "suggestedRate": 311.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-179.jpeg", "unitLabel": "PER PCS"}, {"code": "GT-56", "description": "GT-56", "packRate": 215, "unitRate": 215, "unit": "PER PCS", "suggestedRate": 311.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-180.jpeg", "unitLabel": "PER PCS"}, {"code": "GT-1", "description": "GT-1 Artificial Marigold Door Toran /door", "packRate": 112, "unitRate": 112, "unit": "HANGING PCS", "suggestedRate": 162.4, "remarks": "HANGING PCS", "notes": "HANGING PCS", "image": "assets/product-181.png", "unitLabel": "HANGING PCS"}, {"code": "GT-11", "description": "GT-11 Artificial Marigold Door Toran /door", "packRate": 125, "unitRate": 125, "unit": "HANGING PCS", "suggestedRate": 181.25, "remarks": "HANGING PCS", "notes": "HANGING PCS", "image": "assets/product-182.png", "unitLabel": "HANGING PCS"}, {"code": "GT-12", "description": "GT-12 Artificial Marigold Door Toran /door", "packRate": 125, "unitRate": 125, "unit": "HANGING PCS", "suggestedRate": 181.25, "remarks": "HANGING PCS", "notes": "HANGING PCS", "image": "assets/product-183.png", "unitLabel": "HANGING PCS"}, {"code": "KH-1", "description": "KH-01 (Pack of 12 Pcs)", "packRate": 734, "unitRate": 61.166666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1064.3, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-184.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-11", "description": "KH-11 (Pack of 12 Pcs)", "packRate": 640, "unitRate": 53.333333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 928, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-185.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-15", "description": "KH-15 (Pack of 12 Pcs)", "packRate": 1871, "unitRate": 155.91666666666666, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2712.95, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-186.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-20", "description": "KH-20 (Pack of 12 Line)", "packRate": 2235, "unitRate": 186.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 3240.75, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-187.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-24", "description": "KH-24 (Pack of 12 Pcs)", "packRate": 879, "unitRate": 73.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1274.55, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-188.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-26", "description": "KH-26 (Pack of 12 Line)", "packRate": 699, "unitRate": 58.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1013.55, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-189.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-32", "description": "KH-32 (Pack of 12 Pcs)", "packRate": 836, "unitRate": 69.66666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1212.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-190.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-36", "description": "KH-36 (Pack of 12 Pcs)", "packRate": 734, "unitRate": 61.166666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1064.3, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-191.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-41", "description": "KH-41 (Pack of 12 Pcs)", "packRate": 1504, "unitRate": 125.33333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2180.8, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-192.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-39", "description": "KH-39 (Pack of 12 Pcs)", "packRate": 612, "unitRate": 51, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 887.4000000000001, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-193.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-49", "description": "KH-49 (Pack of 12 Pcs)", "packRate": 1474, "unitRate": 122.83333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2137.3, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-194.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-52", "description": "KH-52 (Pack of 12 lines)", "packRate": 1190, "unitRate": 99.16666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1725.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-195.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-64", "description": "KH-64 Pack of 12 Pcs", "packRate": 2076, "unitRate": 173, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 3010.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-196.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "KH-17", "description": "KH-17 (Pack of 12 pcs)", "packRate": 1193, "unitRate": 99.41666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1729.85, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-197.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-1", "description": "GFH-01(PackOf12Lines)", "packRate": 869, "unitRate": 72.41666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1260.05, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-198.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-2", "description": "GFH-02(PackOf12Lines)", "packRate": 725, "unitRate": 60.416666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1051.25, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-199.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-3", "description": "GFH-03(PackOf12Pcs)", "packRate": 634, "unitRate": 52.833333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 919.3, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-200.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-4", "description": "GFH-04 (PackOf12Pcs)", "packRate": 490, "unitRate": 40.833333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 710.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-201.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-6", "description": "GFH-06 (PackOf12Pcs)", "packRate": 981, "unitRate": 81.75, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1422.45, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-202.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-11", "description": "GFH-11(PackOf12Pcs)", "packRate": 816, "unitRate": 68, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1183.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-203.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-14", "description": "GFH-14 (Packof12Line)", "packRate": 833, "unitRate": 69.41666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1207.85, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-204.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-15", "description": "GFH-15(Packof12Line)", "packRate": 495, "unitRate": 41.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 717.75, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-205.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-16", "description": "GFH-16(Packof12Line)", "packRate": 576, "unitRate": 48, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 835.2, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-206.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "GFH-20", "description": "GFH-20(Packof12Line)", "packRate": 544, "unitRate": 45.333333333333336, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 788.8, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-207.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "GFH-21", "description": "GFH-21", "packRate": 495, "unitRate": 495, "unit": "6 PCS ALAG ALAG COLOUR PCS", "suggestedRate": 717.75, "remarks": "6 PCS ALAG ALAG COLOUR PCS", "notes": "6 PCS ALAG ALAG COLOUR PCS", "image": "assets/product-208.jpeg", "unitLabel": "6 PCS ALAG ALAG COLOUR PCS"}, {"code": "GFH-23", "description": "GFH-23(Packof12Line)", "packRate": 869, "unitRate": 72.41666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1260.05, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-209.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-24", "description": "GFH-24(Packof12Line)", "packRate": 961, "unitRate": 80.08333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1393.45, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-210.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "GFH-27", "description": "GFH-27(Packof12Pcs)", "packRate": 1361, "unitRate": 113.41666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1973.45, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-211.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-28", "description": "GFH-28(packof12pcs)", "packRate": 906, "unitRate": 75.5, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1313.7, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-212.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-29", "description": "GFH-29 (Packof12Pcs)", "packRate": 327, "unitRate": 27.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 474.15, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-213.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-32", "description": "GFH-32(Packof12Pcs)", "packRate": 527, "unitRate": 43.916666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 764.15, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-214.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-33", "description": "GFH-33(Packof12Line)", "packRate": 725, "unitRate": 60.416666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1051.25, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-215.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-34", "description": "GFH-34 (Packof12Line)", "packRate": 544, "unitRate": 45.333333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 788.8, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-216.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "GFH-35", "description": "GFH-35(Packof12Line)", "packRate": 544, "unitRate": 45.333333333333336, "unit": "PER PCS", "suggestedRate": 788.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-217.jpeg", "unitLabel": "PER PCS"}, {"code": "GFH-36", "description": "GFH-36(Packof12Line)", "packRate": 1119, "unitRate": 93.25, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1622.55, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-218.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "GFH-39", "description": "GFH-39 (Packof12line)", "packRate": 495, "unitRate": 41.25, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 717.75, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-219.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "GFH-43", "description": "GFH-43(Packof12Pcs)", "packRate": 197, "unitRate": 16.416666666666668, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 285.65, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-220.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "3F-18", "description": "3F-18 (Pack of 12 Line)", "packRate": 545, "unitRate": 45.416666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 790.25, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-221.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-21", "description": "3F-21 (Pack of 12 Line)", "packRate": 1238, "unitRate": 103.16666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1795.1, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-222.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "3F-22", "description": "3F-22 ( Pack of 12 Line)", "packRate": 563, "unitRate": 46.916666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 816.35, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-223.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-26", "description": "3F-26 ( Pack of 12 Pcs)", "packRate": 1369, "unitRate": 114.08333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1985.0500000000002, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-224.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-38", "description": "3F-38 (Pack of 12 lines)", "packRate": 1559, "unitRate": 129.91666666666666, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 2260.55, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-225.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-40", "description": "3F-40 (Pack of 12 lines)", "packRate": 570, "unitRate": 47.5, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 826.5, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-226.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-58", "description": "3F-58 (Pack of 12 pcs)", "packRate": 907, "unitRate": 75.58333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1315.15, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-227.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-59", "description": "3F-59 (Pack of 12 Line)", "packRate": 567, "unitRate": 47.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 822.15, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-228.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-81", "description": "3F-81 (Pack of 12 lines)", "packRate": 988, "unitRate": 82.33333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1432.6, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-229.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "3F-97", "description": "3F-97 (Pack of 12 Line)", "packRate": 819, "unitRate": 68.25, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1187.55, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-230.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-98", "description": "3F-98 (Pack of 12 Line)", "packRate": 811, "unitRate": 67.58333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1175.95, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-231.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-100", "description": "3F-100 (Pack of 12 Line)", "packRate": 745, "unitRate": 62.083333333333336, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1080.25, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-232.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-105", "description": "3F-105 (Pack of 12)", "packRate": 599, "unitRate": 49.916666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 868.55, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-233.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-108", "description": "3F-108 (Pack of 12 line)", "packRate": 1003, "unitRate": 83.58333333333333, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1454.35, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-234.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-120", "description": "3F- 120 (Pack of 12 Line)", "packRate": 1280, "unitRate": 106.66666666666667, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1856, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-235.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-121", "description": "3F- 121 (Pack of 12 Line)", "packRate": 686, "unitRate": 57.166666666666664, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 994.7, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-236.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "3F-126", "description": "3F- 126 (Pack of 12 Line)", "packRate": 756, "unitRate": 63, "unit": "2 PKT ALAG ALAG COLOUR KE                 PACK", "suggestedRate": 1096.2, "remarks": "2 PKT ALAG ALAG COLOUR KE                 PACK", "notes": "2 PKT ALAG ALAG COLOUR KE                 PACK", "image": "assets/product-237.jpeg", "unitLabel": "2 PKT ALAG ALAG COLOUR KE                 PACK"}, {"code": "FRM-35", "description": "FRM-35", "packRate": 721, "unitRate": 721, "unit": "5 PKT ALAG ALAG COLOUR KE PCS", "suggestedRate": 1045.45, "remarks": "5 PKT ALAG ALAG COLOUR KE PCS", "notes": "5 PKT ALAG ALAG COLOUR KE PCS", "image": "assets/product-238.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PCS"}, {"code": "FRM-37", "description": "FRM-37 (PACK OF 120)", "packRate": 577, "unitRate": 4.808333333333334, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 836.6500000000001, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-239.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-38", "description": "FRM-38 SUN FLOWER (PACK OF 120)", "packRate": 349, "unitRate": 2.908333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 506.05, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-240.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-39", "description": "FRM-39 PACK OF 120", "packRate": 360, "unitRate": 3, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 522, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-241.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-40", "description": "FRM-40 PEONY FLOWER (PACK OF 120)", "packRate": 271, "unitRate": 2.2583333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 392.95, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-242.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-55", "description": "FRM-55 CARNATION FLOWER (PACK OF 120", "packRate": 191, "unitRate": 1.5916666666666666, "unit": "6 PKT ALAG ALAG COLOUR", "suggestedRate": 276.95, "remarks": "6 PKT ALAG ALAG COLOUR", "notes": "6 PKT ALAG ALAG COLOUR", "image": "assets/product-243.jpeg", "unitLabel": "6 PKT ALAG ALAG COLOUR"}, {"code": "FRM-58", "description": "FRM-58 ROSE FLOWER (PACK OF 120)", "packRate": 180, "unitRate": 1.5, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 261, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-244.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-60", "description": "FRM-60 (PACK OF 100 PCS)", "packRate": 250, "unitRate": 2.5, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 362.5, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-245.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-62", "description": "FRM-62 (PACK OF 120)", "packRate": 211, "unitRate": 1.7583333333333333, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 305.95, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-246.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-76", "description": "FRM-76", "packRate": 380, "unitRate": 3.1666666666666665, "unit": "PER PCS", "suggestedRate": 551, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-247.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-80", "description": "FRM-80 (PACK OF 120)", "packRate": 648, "unitRate": 5.4, "unit": "PER PCS", "suggestedRate": 939.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-248.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-81", "description": "FRM-81 (PACK OF 120)", "packRate": 156, "unitRate": 1.3, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 226.2, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-249.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-82", "description": "FRM-82 (PACK OF 120 PCS)", "packRate": 864, "unitRate": 7.2, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1252.8, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-250.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-86", "description": "FRM-86 Paper Rose Flower (Pack of 120 Pcs)", "packRate": 387, "unitRate": 3.225, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 561.15, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-251.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-87", "description": "FRM-87", "packRate": 721, "unitRate": 6.008333333333334, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1045.45, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-252.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-170", "description": "FRM-170 MUM FLOWER (Pack of 120 Pcs)", "packRate": 363, "unitRate": 3.025, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 526.35, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-253.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-171", "description": "FRM-171 Cloth Flower (Pack of 120 Pcs)", "packRate": 691, "unitRate": 5.758333333333334, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 1001.95, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-254.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-173", "description": "FRM-173 (PACK OF 120)", "packRate": 721, "unitRate": 6.008333333333334, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1045.45, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-255.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-174", "description": "FRM-174 (PACK OF 120)", "packRate": 403, "unitRate": 3.3583333333333334, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 584.35, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-256.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-175", "description": "FRM-175 (PACK OF 120)", "packRate": 293, "unitRate": 2.441666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 424.85, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-257.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-176", "description": "FRM-176 (PACK OF 120)", "packRate": 2160, "unitRate": 18, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 3132, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-258.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-177", "description": "FRM-177 (PACK OF 120)", "packRate": 1080, "unitRate": 9, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1566, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-259.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-178", "description": "FRM-178 (PACK OF 120)", "packRate": 605, "unitRate": 5.041666666666667, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 877.25, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-260.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-179", "description": "FRM-179 (PACK OF 120)", "packRate": 721, "unitRate": 6.008333333333334, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1045.45, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-261.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-180", "description": "FRM-180 (PACK OF 120)", "packRate": 864, "unitRate": 7.2, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 1252.8, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-262.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-181", "description": "FRM-181 STAR FLOWER (PACK OF 120)", "packRate": 335, "unitRate": 2.7916666666666665, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 485.75, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-263.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-221", "description": "FRM-221 (PACK OF 12)", "packRate": 216, "unitRate": 18, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 313.2, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-264.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-212", "description": "FRM-212 (PACK OF 120)", "packRate": 280, "unitRate": 2.3333333333333335, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 406, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-265.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-215", "description": "FRM-215 (PACK OF 120)", "packRate": 380, "unitRate": 3.1666666666666665, "unit": "5 PKT ALAG ALAG COLOUR KE PACK", "suggestedRate": 551, "remarks": "5 PKT ALAG ALAG COLOUR KE PACK", "notes": "5 PKT ALAG ALAG COLOUR KE PACK", "image": "assets/product-266.jpeg", "unitLabel": "5 PKT ALAG ALAG COLOUR KE PACK"}, {"code": "FRM-217", "description": "FRM-217 Paper Rose Flower (Pack of 120 Pcs)", "packRate": 408, "unitRate": 3.4, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 591.6, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-267.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-223", "description": "FRM-223 DALIYA FLOWER (pack of 120)", "packRate": 308, "unitRate": 2.566666666666667, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 446.6, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-268.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-226", "description": "FRM-226 (PACK OF 50)", "packRate": 650, "unitRate": 13, "unit": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "suggestedRate": 942.5, "remarks": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "notes": "6 COLOUR KE ALAG ALAG PKT DENA PACK", "image": "assets/product-269.jpeg", "unitLabel": "6 COLOUR KE ALAG ALAG PKT DENA PACK"}, {"code": "FRM-11", "description": "FRM-11 (Packof12Pcs)", "packRate": 101, "unitRate": 8.416666666666666, "unit": "PER PCS", "suggestedRate": 146.45, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-270.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-12", "description": "FRM-12 (Packof12Pcs)", "packRate": 46, "unitRate": 3.8333333333333335, "unit": "PER PCS", "suggestedRate": 66.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-271.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-14", "description": "FRM-14 (PerKg)", "packRate": 1020, "unitRate": 1020, "unit": "KG", "suggestedRate": 1479, "remarks": "KG", "notes": "KG", "image": "assets/product-272.jpeg", "unitLabel": "KG"}, {"code": "FRM-16", "description": "FRM-16 (PerKg)", "packRate": 1021, "unitRate": 1021, "unit": "KG", "suggestedRate": 1480.45, "remarks": "KG", "notes": "KG", "image": "assets/product-273.jpeg", "unitLabel": "KG"}, {"code": "FRM-17", "description": "FRM-17 (PerKg)", "packRate": 750, "unitRate": 750, "unit": "KG", "suggestedRate": 1087.5, "remarks": "KG", "notes": "KG", "image": "assets/product-274.jpeg", "unitLabel": "KG"}, {"code": "FRM-18", "description": "FRM-18 (PerKg)", "packRate": 1021, "unitRate": 1021, "unit": "KG", "suggestedRate": 1480.45, "remarks": "KG", "notes": "KG", "image": "assets/product-275.jpeg", "unitLabel": "KG"}, {"code": "FRM-21", "description": "FRM-21 (PerKg)", "packRate": 901, "unitRate": 901, "unit": "KG", "suggestedRate": 1306.45, "remarks": "KG", "notes": "KG", "image": "assets/product-276.jpeg", "unitLabel": "KG"}, {"code": "FRM-31", "description": "FRM-31 (Pack of 12)", "packRate": 101, "unitRate": 8.416666666666666, "unit": "PER PCS", "suggestedRate": 146.45, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-277.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-42A", "description": "FRM-42A (5.5 INCH DARK GREEN)", "packRate": 460, "unitRate": 460, "unit": "KG", "suggestedRate": 667, "remarks": "KG", "notes": "KG", "image": "assets/product-278.jpeg", "unitLabel": "KG"}, {"code": "FRM-42B", "description": "FRM-42B (4 INCH DARK GREEN)", "packRate": 460, "unitRate": 460, "unit": "KG", "suggestedRate": 667, "remarks": "KG", "notes": "KG", "image": "assets/product-279.jpeg", "unitLabel": "KG"}, {"code": "FRM-43", "description": "FRM-43 PER KG", "packRate": 1021, "unitRate": 1021, "unit": "KG", "suggestedRate": 1480.45, "remarks": "KG", "notes": "KG", "image": "assets/product-280.jpeg", "unitLabel": "KG"}, {"code": "FRM-48", "description": "FRM-48", "packRate": 1501, "unitRate": 1501, "unit": "KG", "suggestedRate": 2176.45, "remarks": "KG", "notes": "KG", "image": "assets/product-281.jpeg", "unitLabel": "KG"}, {"code": "FRM-50", "description": "FRM-50 (perkg)", "packRate": 541, "unitRate": 541, "unit": "KG", "suggestedRate": 784.45, "remarks": "KG", "notes": "KG", "image": "assets/product-282.jpeg", "unitLabel": "KG"}, {"code": "FRM-184", "description": "FRM-184", "packRate": 1920, "unitRate": 1920, "unit": "KG", "suggestedRate": 2784, "remarks": "KG", "notes": "KG", "image": "assets/product-283.jpeg", "unitLabel": "KG"}, {"code": "FRM-185", "description": "FRM-185", "packRate": 53, "unitRate": 53, "unit": "PER PCS", "suggestedRate": 76.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-284.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-201", "description": "FRM-201 per pcs", "packRate": 9, "unitRate": 9, "unit": "PER PCS", "suggestedRate": 13.05, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-285.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-202", "description": "FRM-202 DARK GREEN", "packRate": 7, "unitRate": 7, "unit": "PER PCS", "suggestedRate": 10.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-286.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-205", "description": "FRM-205", "packRate": 1920, "unitRate": 1920, "unit": "KG", "suggestedRate": 2784, "remarks": "KG", "notes": "KG", "image": "assets/product-287.jpeg", "unitLabel": "KG"}, {"code": "FRM-36", "description": "FRM-36", "packRate": 24, "unitRate": 24, "unit": "PER PCS", "suggestedRate": 34.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-288.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-41", "description": "FRM-41 Single pcs 5 Stick", "packRate": 3.75, "unitRate": 3.75, "unit": "PER PCS", "suggestedRate": 5.4375, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-289.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-41", "description": "FRM-41 Single pcs 7 Stick", "packRate": 5.25, "unitRate": 5.25, "unit": "PER PCS", "suggestedRate": 7.612500000000001, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-290.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-41", "description": "FRM-41 Single pcs 9 Stick", "packRate": 6.75, "unitRate": 6.75, "unit": "PER PCS", "suggestedRate": 9.7875, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-291.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-1", "description": "JLH-01 (Pack of 12 Pcs)", "packRate": 635, "unitRate": 52.916666666666664, "unit": "PER PCS", "suggestedRate": 920.75, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-292.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-2", "description": "JLH-02 (Pack of 12 Pcs)", "packRate": 1048, "unitRate": 87.33333333333333, "unit": "PER PCS", "suggestedRate": 1519.6, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-293.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-3", "description": "JLH-03 (Pack of 12 Pcs)", "packRate": 1402, "unitRate": 116.83333333333333, "unit": "PER PCS", "suggestedRate": 2032.9, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-294.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-4", "description": "JLH-04 (Pack of 12 Pcs)", "packRate": 725, "unitRate": 60.416666666666664, "unit": "PER PCS", "suggestedRate": 1051.25, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-295.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-5", "description": "JLH-05 (Pack of 12 Pcs)", "packRate": 966, "unitRate": 80.5, "unit": "PER PCS", "suggestedRate": 1400.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-296.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-6", "description": "JLH-06 (Pack of 12 Pcs)", "packRate": 726, "unitRate": 60.5, "unit": "PER PCS", "suggestedRate": 1052.7, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-297.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-7", "description": "JLH-07 (Pack of 12 Pcs)", "packRate": 1136, "unitRate": 94.66666666666667, "unit": "PER PCS", "suggestedRate": 1647.2, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-298.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-8", "description": "JLH-08 (Pack of 12 Pcs)", "packRate": 483, "unitRate": 40.25, "unit": "PER PCS", "suggestedRate": 700.35, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-299.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-10", "description": "JLH-10 (Pack of 12 Line)", "packRate": 1084, "unitRate": 90.33333333333333, "unit": "PER PCS", "suggestedRate": 1571.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-300.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-11", "description": "JLH-11 (Pack of 12 Pcs)", "packRate": 605, "unitRate": 50.416666666666664, "unit": "PER PCS", "suggestedRate": 877.25, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-301.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-12", "description": "JLH-12 pack of 12", "packRate": 997, "unitRate": 83.08333333333333, "unit": "PER PCS", "suggestedRate": 1445.65, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-302.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-13", "description": "JLH-13 (Pack of 12 Pair)", "packRate": 873, "unitRate": 72.75, "unit": "PER PCS", "suggestedRate": 1265.85, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-303.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-14", "description": "JLH-14 (Pack of 12 Pcs)", "packRate": 847, "unitRate": 70.58333333333333, "unit": "PER PCS", "suggestedRate": 1228.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-304.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-17", "description": "JLH-17 (Pack of 12 Line)", "packRate": 967, "unitRate": 80.58333333333333, "unit": "PER PCS", "suggestedRate": 1402.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-305.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-18", "description": "JLH-18 (Pack of 12 line)", "packRate": 1040, "unitRate": 86.66666666666667, "unit": "PER PCS", "suggestedRate": 1508, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-306.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-19", "description": "JLH-19 (Pack of 12 Line)", "packRate": 1258, "unitRate": 104.83333333333333, "unit": "PER PCS", "suggestedRate": 1824.1, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-307.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-23", "description": "JLH-23 (Pack of 12 lines)", "packRate": 985, "unitRate": 82.08333333333333, "unit": "PER PCS", "suggestedRate": 1428.25, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-308.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-24", "description": "JLH-24 (Pack of 12 lines)", "packRate": 605, "unitRate": 50.416666666666664, "unit": "PER PCS", "suggestedRate": 877.25, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-309.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-25", "description": "JLH-25 (Set of 5 lines)", "packRate": 286, "unitRate": 57.2, "unit": "PER PCS", "suggestedRate": 414.70000000000005, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-310.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-32", "description": "JLH-32 (Pack of 12 Pcs)", "packRate": 174, "unitRate": 14.5, "unit": "PER PCS", "suggestedRate": 252.3, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-311.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-39", "description": "JLH-39 (Pack of 12 lines)", "packRate": 2219, "unitRate": 184.91666666666666, "unit": "PER PCS", "suggestedRate": 3217.55, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-312.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-42", "description": "JLH-42 Pack of 12 Pcs", "packRate": 967, "unitRate": 80.58333333333333, "unit": "PER PCS", "suggestedRate": 1402.15, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-313.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-45", "description": "JLH-45 (Pack of 12 Pcs)", "packRate": 346, "unitRate": 28.833333333333332, "unit": "PER PCS", "suggestedRate": 501.70000000000005, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-314.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-48", "description": "JLH-48 (Pack of 12)", "packRate": 1104, "unitRate": 92, "unit": "PER PCS", "suggestedRate": 1600.8, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-315.jpeg", "unitLabel": "PER PCS"}, {"code": "JLH-49", "description": "JLH-49 (Pack of 12)", "packRate": 698, "unitRate": 58.166666666666664, "unit": "PER PCS", "suggestedRate": 1012.1, "remarks": "PER PCS", "notes": "PER PCS", "image": "assets/product-316.jpeg", "unitLabel": "PER PCS"}, {"code": "FRM-51", "description": "FRM-51 (per kg)", "packRate": 190, "unitRate": 190, "unit": "KG", "suggestedRate": 275.5, "remarks": "KG", "notes": "KG", "image": "assets/product-317.jpeg", "unitLabel": "KG"}, {"code": "FRM-59", "description": "FRM-59", "packRate": 541, "unitRate": 541, "unit": "KG", "suggestedRate": 784.45, "remarks": "KG", "notes": "KG", "image": "assets/product-318.jpeg", "unitLabel": "KG"}, {"code": "FRM-90", "description": "FRM-90", "packRate": 421, "unitRate": 421, "unit": "KG", "suggestedRate": 610.45, "remarks": "KG", "notes": "KG", "image": "assets/product-319.jpeg", "unitLabel": "KG"}, {"code": "FRM-3", "description": "FRM-03(Per Kg)", "packRate": 481, "unitRate": 481, "unit": "KG", "suggestedRate": 697.45, "remarks": "KG", "notes": "KG", "image": "assets/product-320.jpeg", "unitLabel": "KG"}, {"code": "FRM-2", "description": "FRM-2(PerKg)", "packRate": 361, "unitRate": 361, "unit": "KG", "suggestedRate": 523.45, "remarks": "KG", "notes": "KG", "image": "assets/product-321.jpeg", "unitLabel": "KG"}, {"code": "FRM-4", "description": "FRM-4(PerKg)", "packRate": 481, "unitRate": 481, "unit": "KG", "suggestedRate": 697.45, "remarks": "KG", "notes": "KG", "image": "assets/product-322.jpeg", "unitLabel": "KG"}, {"code": "FRM-6", "description": "FRM-06 (Per Kg )", "packRate": 336, "unitRate": 336, "unit": "KG", "suggestedRate": 487.20000000000005, "remarks": "KG", "notes": "KG", "image": "assets/product-323.jpeg", "unitLabel": "KG"}, {"code": "FRM-7", "description": "FRM-07(PerKg)", "packRate": 661, "unitRate": 661, "unit": "KG", "suggestedRate": 958.45, "remarks": "KG", "notes": "KG", "image": "assets/product-324.jpeg", "unitLabel": "KG"}, {"code": "FRM-10", "description": "FRM-10(PerKg)", "packRate": 481, "unitRate": 481, "unit": "KG", "suggestedRate": 697.45, "remarks": "KG", "notes": "KG", "image": "assets/product-325.jpeg", "unitLabel": "KG"}];
+const search = document.getElementById('search');
+const category = document.getElementById('category');
+const sort = document.getElementById('sort');
+const grid = document.getElementById('products');
+const count = document.getElementById('count');
+const groups = [...new Set(products.map(p => (p.code.match(/^[A-Za-z0-9]+/)||['OTHER'])[0].toUpperCase()))].sort();
+groups.forEach(g => { const o=document.createElement('option');o.value=g;o.textContent=g;category.appendChild(o); });
+const money = n => n === "" || n == null || Number.isNaN(Number(n)) ? "—" : "₹"+Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+function render(){
+ let list=products.filter(p=>{
+  const q=search.value.trim().toLowerCase();
+  const g=(p.code.match(/^[A-Za-z0-9]+/)||['OTHER'])[0].toUpperCase();
+  return (!q || (p.code+" "+p.description+" "+p.remarks).toLowerCase().includes(q)) && (!category.value || g===category.value);
+ });
+ if(sort.value==="low") list.sort((a,b)=>(Number(a.packRate)||0)-(Number(b.packRate)||0));
+ else if(sort.value==="high") list.sort((a,b)=>(Number(b.packRate)||0)-(Number(a.packRate)||0));
+ else list.sort((a,b)=>a.code.localeCompare(b.code,undefined,{numeric:true}));
+ count.textContent=`Showing ${list.length} of ${products.length} products`;
+ grid.innerHTML="";
+ if(!list.length){grid.innerHTML='<div class="empty">No matching products. Try another product code or search term.</div>';return;}
+ list.forEach(p=>{
+  const card=document.createElement('article');card.className='card';
+  const photo=document.createElement('div');photo.className='photo';
+  if(p.image){const img=document.createElement('img');img.src=p.image;img.alt=p.code+" product photo";img.loading='lazy';photo.appendChild(img);}
+  else {const no=document.createElement('span');no.className='no-photo';no.textContent='Photo not available';photo.appendChild(no);}
+  const body=document.createElement('div');body.className='body';
+  const code=document.createElement('div');code.className='code';code.textContent=p.code;
+  const name=document.createElement('div');name.className='name';name.textContent=p.description;
+  const rr=document.createElement('div');rr.className='rate-row';
+  const rate=document.createElement('div');rate.className='rate';rate.textContent=money(p.packRate);const sm=document.createElement('small');sm.textContent=' rate';rate.appendChild(sm);
+  const sug=document.createElement('div');sug.className='suggest';sug.textContent='Suggested '+money(p.suggestedRate);
+  rr.append(rate,sug);
+  const details=document.createElement('div');details.className='details';
+  const unit=document.createElement('div');unit.textContent='Unit rate: '+money(p.unitRate)+(p.unitLabel?' · '+p.unitLabel:'');
+  details.appendChild(unit);
+  const actions=document.createElement('div');actions.className='actions';
+  const copy=document.createElement('button');copy.className='primary';copy.textContent='Copy product details';
+  copy.addEventListener('click',async()=>{const text=`${p.code} — ${p.description}\\nPack rate: ${money(p.packRate)}\\nSuggested rate (+45%): ${money(p.suggestedRate)}\\nUnit rate: ${money(p.unitRate)} ${p.unitLabel||''}`;try{await navigator.clipboard.writeText(text);copy.textContent='Copied';setTimeout(()=>copy.textContent='Copy product details',1400)}catch(e){copy.textContent='Select details manually';}});
+  actions.appendChild(copy);
+  body.append(code,name,rr,details,actions);card.append(photo,body);grid.appendChild(card);
+ });
+}
+[search,category,sort].forEach(el=>el.addEventListener('input',render));
+render();
+</script>
+</body>
 </html>
