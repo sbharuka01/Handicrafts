@@ -1,2 +1,0 @@
-# Handicrafts
-Handicrafts
